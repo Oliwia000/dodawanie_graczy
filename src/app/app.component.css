@@ -1,0 +1,10 @@
+ *{
+  background-color:azure;
+ }
+ td {
+    border: 12px  solid rgb(223, 160, 160);
+  }
+
+button{
+  border-color: rgb(127, 172, 255);
+}

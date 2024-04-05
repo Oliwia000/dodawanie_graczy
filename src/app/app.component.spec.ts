@@ -1,8 +1,10 @@
 import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
+    imports: [RouterTestingModule],
     declarations: [AppComponent]
   }));
 
@@ -12,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'dodawanie_graczy'`, () => {
+  it(`should have as title 'gracz'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('dodawanie_graczy');
+    expect(app.title).toEqual('gracz');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('dodawanie_graczy app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('gracz app is running!');
   });
 });
