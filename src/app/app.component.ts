@@ -18,7 +18,6 @@ export class AppComponent {
   groups = '';
  
  
- 
   addUser() {
     if (this.firstName.length <= 0 || this.lastName.length <= 0 || this.username.length <= 0 || this.groups.length <= 0) {
       alert("Nie podano wszystkich danych!");
